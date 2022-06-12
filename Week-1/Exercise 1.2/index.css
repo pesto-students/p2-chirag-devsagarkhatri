@@ -1,0 +1,101 @@
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    background-color: #fff;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    font-family: Lato, sans-serif;
+    justify-content: space-between;
+    color: #222;
+}
+
+main {
+    display: flex;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #f2f2f2;
+}
+
+table {
+    margin: 3px;
+    margin-top: 15px;
+}
+
+section.content {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.jumbotron {
+    flex: 0 0 280px;
+    display: flex;
+    padding: 40px;
+    background-color: #4e4e4e;
+}
+
+.jumbotron .music {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    font-weight: 300;
+    color: #fff;
+    padding-left: 50px;
+}
+
+.music {
+    padding-left: 25px;
+    padding-right: 0px;
+    color: white;
+    justify-content: space-between;
+}
+
+section.content .music-list {
+    flex: 1 0 auto;
+    list-style-type: none;
+    padding: 5px 10px 0px;
+}
+
+tr:nth-child(2n) {
+    background-color: #f2f2f2;
+}
+
+.button {
+    border: 2px solid;
+    height: fit-content;
+    width: fit-content;
+    margin: 3px;
+}
+
+footer {
+    display: flex;
+    flex: 0 0 90px;
+    padding: 10px;
+    color: #fff;
+    background-color: rgba(61, 100, 158, .9);
+}
+
+.logo-small {
+    display: flex;
+    margin-right: auto;
+}
+
+.logo-small img {
+    padding-right: 10px;
+    width: 100px;
+}
+
+.player-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+}

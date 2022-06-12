@@ -1,0 +1,68 @@
+body {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.square {
+    min-height: 400px;
+    min-width: 400px;
+    max-height: 400px;
+    max-width: 400px;
+    margin-top: 25vh;
+    margin-bottom: 20vh;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco/cheeov1jruvldqq7uufs);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.block {
+    min-height: 200px;
+    min-width: 200px;
+    max-height: 200px;
+    max-width: 200px;
+    transition-duration: 10s;
+}
+
+.block1 {
+    background: red;
+}
+
+.block2 {
+    background: yellow;
+}
+
+.block3 {
+    background: blue;
+}
+
+.block4 {
+    background: green;
+}
+
+.block1:hover {
+    transform: rotate(-90deg) translateX(200px);
+    transition-duration: 2s;
+}
+
+.block2:hover {
+    transform: rotate(-90deg) translateY(200px);
+    transition-duration: 2s;
+}
+
+.block3:hover {
+    transform: rotate(-90deg) translateY(-200px);
+    transition-duration: 2s;
+}
+
+.block4:hover {
+    transform: rotate(-90deg) translateX(-200px);
+    transition-duration: 2s;
+}
