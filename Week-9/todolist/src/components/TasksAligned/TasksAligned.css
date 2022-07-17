@@ -1,0 +1,6 @@
+.taskLinearBg{
+    background: linear-gradient(to bottom,transparent,#fcd883);
+    max-height: 400px;
+    min-height: 400px;
+    overflow-y: auto;
+}
