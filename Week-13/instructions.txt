@@ -1,0 +1,34 @@
+To initialize the project please folow the below steps:
+
+    1. Open command prompt and navigate to location you want to create the project.
+    2. Type these commands in the command prompt :-
+        mkdir weather_backend
+        cd weather_backend
+        npm init
+        npm install nodemon express cors node-fetch --save
+    3. Copy the files 'index.js' into the 'weather_backend' folder.
+    4. Open the package.json file and add the following command in the scripts :-
+        "start": "nodemon index.js",
+
+    5. Run the command in command prompt to run the application :
+        npm start
+
+    6. List of Data that we could fetch with the backend we have created :
+        
+        List latest weather of a city:-
+            http://localhost:3001/getCity?q=delhi
+
+        List latest weather of multiple cities:-
+            http://localhost:3001/getCities?q=delhi,varanasi,goa
+        
+        List latest weather of multiple cities in paginated format:-
+            http://localhost:3001/getCities?q=delhi,varanasi,goa&p=2
+        
+        List latest hourly forecast of a city:-
+            http://localhost:3001/getForecast?q=varanasi
+        
+        List latest hourly forecast of multiple cities:-
+            http://localhost:3001/getForecast?q=delhi,varanasi,goa
+        
+        List latest hourly forecast of multiple cities in paginated format:-
+            http://localhost:3001/getForecast?q=delhi,varanasi,goa&p=2
